@@ -1,4 +1,5 @@
 
+$(function() {
 let footercerez = $('.cerez-footer');
 
 $('.footer-btn').on('click', function() {
@@ -9,3 +10,4 @@ $('.footer-btn').on('click', function() {
 if (localStorage.getItem('okundu')) {
     footercerez.addClass('d-none');
 }
+});
