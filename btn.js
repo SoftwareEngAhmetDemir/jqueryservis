@@ -1,8 +1,7 @@
 
-$(function() {
-let footercerez = $('.cerez-footer');
+let footercerez = document.querySelector('.cerez-footer');
 
-$('.footer-btn').on('click', function() {
+document.querySelector('.footer-btn').on('click', function() {
     'use strict';
     localStorage.setItem('okundu', true);
     footercerez.addClass('d-none');
@@ -10,4 +9,4 @@ $('.footer-btn').on('click', function() {
 if (localStorage.getItem('okundu')) {
     footercerez.addClass('d-none');
 }
-});
+
